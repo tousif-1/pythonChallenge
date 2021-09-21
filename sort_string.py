@@ -9,8 +9,12 @@
 
 
 def sort_words(input):
-  words = inputs.split()
+  words = input.split()
   words = [w.lower() + w for w in words]
   words.sort()
   words = [w[len(w)//2:] for w in words]
   return ' '.join(words)
+
+wString = input("Enter your string: ")
+result = sort_words(wString)
+print (result)
